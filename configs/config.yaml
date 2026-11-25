@@ -1,0 +1,10 @@
+data:
+  root: data/raw/mvtec
+  category: bottle
+  image_size: 256
+  batch_size: 16
+model:
+  backbone: wide_resnet50_2
+  layers: [layer2, layer3]
+  coreset_ratio: 0.1
+  k_neighbors: 3
